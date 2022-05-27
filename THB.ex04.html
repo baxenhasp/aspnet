@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Học Viên</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh Sách Học Viên</h1>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Họ tên</th>
+                <th rowspan="2">Ngày Sinh</th>
+                <th colspan="3">Điểm</th>
+            </tr>
+            <tr>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Anh</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <td>1</td>
+            <td>hdgsdjd</td>
+            <td>17/05/2000</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>hdgsdjd</td>
+            <td>17/05/2000</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>hdgsdjd</td>
+            <td>17/05/2000</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>hdgsdjd</td>
+            <td>17/05/2000</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+        </tr>
+    </table>
+    <br>
+    <h1> Thông tin Chi tiết</h1>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th rowspan="10"><img src="../images/item1.png" alt="" width="100px" hei="100px"></th>
+                <th colspan="4">Ngày Sinh: 28/02/1996</th>
+
+            </tr>
+            <tr>
+                <th colspan="3"> Điểm thi</th>
+                <th rowspan="2"> Điểm TB</th>
+            </tr>
+
+            <tr>
+
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Anh</th>
+            </tr>
+        </thead>
+        <tr>
+            <td></td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+
+        </tr>
+    </table>
+
+    <form name="frmLoginInfo" id="frmLoginInfo" method="post" action="#">
+        <!-- Tạo table để canh chỉnh dòng cột cho ngay ngắn -->
+        <table border="1" id="frmLoginInfoContainer">
+            <!-- Dòng tiêu đề -->
+            <tr>
+                <td colspan="2" align="center" bgcolor="#279aec"><b>Thông tin đăng nhập</b></td>
+            </tr>
+            <!-- Kết thúc dòng tiêu đề -->
+            <!-- Dòng Tên đăng nhập -->
+            <tr>
+                <td>
+                    <b>Tên đăng nhập:</b>
+                </td>
+                <td>
+                    <!-- Sử dụng thẻ <input /> để tạo ô nhập liệu 
+                - Thẻ <input /> là thẻ không có thẻ đóng.
+                - Mỗi ô nhập liệu được tạo ra, cần đặt thuộc tính name và id để dễ quản lý.
+                -->
+                    <input type="text" name="txtUsername" id="txtUsername" />
+                </td>
+            </tr>
+            <!-- Kết thúc dòng Tên đăng nhập -->
+            <!-- Dòng Âm lượng -->
+            <tr>
+                <td>
+                    <b>Âm lượng:</b>
+                </td>
+                <td>
+                    <!-- Sử dụng thẻ <input /> để tạo ô nhập liệu 
+                - Thẻ <input /> là thẻ không có thẻ đóng.
+                - Mỗi ô nhập liệu được tạo ra, cần đặt thuộc tính name và id để dễ quản lý.
+                - Sử dụng thuộc tính type="range"
+                -->
+                    <input type="range" name="txtAmLuong" id="txtAmLuong" min="1" max="100" />
+                </td>
+            </tr>
+            <!-- Kết thúc dòng Âm lượng -->
+            <!-- Dòng nút bấm Gởi dữ liệu -->
+            <tr>
+                <td colspan="2" align="center">
+                    <!-- Sử dụng thẻ <input /> để tạo ô nhập liệu 
+                - Thẻ <input /> là thẻ không có thẻ đóng.
+                - Mỗi ô nhập liệu được tạo ra, cần đặt thuộc tính name và id để dễ quản lý.
+                - Sử dụng thuộc tính type="submit"
+                - Sử dụng thuộc tính value để cài đặt nhãn cho nút bấm submit
+                -->
+                    <input type="submit" name="btnSubmit" id="btnSubmit" value="Đăng nhập hệ thống" />
+                </td>
+            </tr>
+            <!-- Kết thúc dòng nút bấm gởi dữ liệu -->
+        </table> <!-- Kết thúc #frmLoginInfoContainer -->
+    </form> <!-- Kết thúc #frmLoginInfo -->
+
+</body>
+
+</html>
